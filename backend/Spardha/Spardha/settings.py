@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "Authentication",
     "Teams",
     "Manager",
+    "Documents",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "drf_yasg",
     "corsheaders",
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +68,14 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework.authentication.TokenAuthentication",
     ),
+     'DEFAULT_THROTTLE_CLASSES': [
+        'rest_framework.throttling.AnonRateThrottle',
+        'rest_framework.throttling.UserRateThrottle'
+    ],
+    'DEFAULT_THROTTLE_RATES': {
+        'anon': '30/min',
+        'user': '50/min'
+    }
 }
 
 ROOT_URLCONF = "Spardha.urls"
@@ -179,7 +189,7 @@ EMAIL_HOST_USER_NAME = config("EMAIL_HOST_USER_NAME")
 SENDGRID_RESET_ACCOUNT_TEMP_ID = config("SENDGRID_RESET_ACCOUNT_TEMP_ID")
 EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
 BASE_URL_FRONTEND = config("BASE_URL_FRONTEND")
-
+CURRENT_URL_BACKEND = config("CURRENT_URL_BACKEND")
 
 # Setup support for proxy headers
 USE_X_FORWARDED_HOST = True

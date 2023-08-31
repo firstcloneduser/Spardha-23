@@ -146,9 +146,10 @@ const EventsDb = () => {
     ],
   };
 
+  const baseUrl = process.env.REACT_APP_BASE_URL;
   useEffect(() => {
     axios
-      .get('https://api.spardha.co.in/teams/', {
+      .get(`${baseUrl}teams/`, {
         headers: {
           Authorization: `Token ${token}`,
         },
@@ -232,7 +233,7 @@ const EventsDb = () => {
       }
     }
     axios
-      .put(`https://api.spardha.co.in/teams/${game}/`, data, {
+      .put(`${baseUrl}teams/${game}/`, data, {
         headers: {
           Authorization: `Token ${token}`,
         },

@@ -21,8 +21,6 @@ Before you begin, we recommend you read about the basic building blocks that ass
 - all branches after your PR Accept/Reject are automatically deleted.
 - all PR would be made on the dev branch, not to the direct master.
 
-
-
 ## Prerequisites
 Make sure you have installed all of the following prerequisites on your development machine:
 - Git - Download & Install Git. OSX and Linux machines typically have this already installed.

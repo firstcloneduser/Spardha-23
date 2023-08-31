@@ -26,7 +26,7 @@ function Member({ post, name, phone, id, mail, image, linkedin }) {
             </h3>
             <span className="position p-0 m-0">
               <a href={`tel:${phone}`} className={styles.links}>
-                +91&#8209;{phone}
+                {phone}
               </a>
             </span>
             <div>

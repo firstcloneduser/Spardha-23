@@ -39,8 +39,9 @@ function Forgot() {
       return;
     }
 
+    const baseUrl = process.env.REACT_APP_BASE_URL;
     axios
-      .post('https://api.spardha.co.in/auth/password_reset/email/', {
+      .post(`${baseUrl}auth/password_reset/email/`, {
         email: email.value,
       })
       .then((res) => {

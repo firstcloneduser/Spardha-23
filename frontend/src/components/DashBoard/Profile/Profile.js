@@ -35,7 +35,7 @@ const Profile = () => {
     // }
 
     axios
-      .get(`${baseUrl}/auth/update/`, {
+      .get(`${baseUrl}auth/update/`, {
         headers: {
           Authorization: `Token ${token}`,
         },
@@ -60,7 +60,7 @@ const Profile = () => {
   const deleteProfile = async () => {
     // console.log('delete');
     await axios
-      .get(`${baseUrl}/auth/delete/`, {
+      .get(`${baseUrl}auth/delete/`, {
         headers: {
           Authorization: `Token ${token}`,
         },

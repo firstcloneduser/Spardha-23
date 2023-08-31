@@ -26,13 +26,13 @@ function HomeSlider() {
             >
               <div className="col-md-12 col-sm-12 col-12 ftco-animate text-center mt-5" style={{width:"78vw"}}>
                 <div id="row" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1" src="/images/logo/powered.svg" alt="Rankers" />
-                  </a>
+                  </a> */}
                   <img id="columnLogo" src="/images/logo/spardha-white-home.png" alt="spardha" />
-                  <a href="https://iitiantrader.in/">
+                  {/* <a href="https://iitiantrader.in/">
                     <img id="column2" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h1 className="mb-1 text-overflow-center spardha-21">
                   Spardha&nbsp;2023
@@ -40,7 +40,7 @@ function HomeSlider() {
                 <h2 className="text-overflow-center home-spardha-subheading">
                   IIT (BHU), Varanasi
                 </h2>
-                <div id="rowM" className="">
+                {/* <div id="rowM" className="">
                   <a href="https://myrankers.com">
                     <img id="column1M" src="/images/logo/powered.svg" alt="Rankers" />
                   </a>
@@ -48,12 +48,12 @@ function HomeSlider() {
                   <a href="https://iitiantrader.in/">
                     <img id="column2M" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
                   </a>
-                </div>
+                </div> */}
                 <h2
                   className="text-overflow-center home-spardha-subheading"
                   style={{ color: '#fdcc07' }}
                 >
-                  Registrations are now closed
+                  13th - 15th october
                 </h2>
                 <div className="container mt-5 pt-3 home-large-screen">
                   <div className="row">
@@ -64,11 +64,11 @@ function HomeSlider() {
                     </div>
                     <div className="col-6 reg">
                       <HashLink
-                        // to="/register/signup#register"
-                        to="/register/login"
+                        to="/register/signup#register"
+                        // to="/register/login"
                         className="home-button"
                       >
-                        {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                        REGISTER&nbsp;/&nbsp;LOGIN
                       </HashLink>
                     </div>
                   </div>
@@ -79,11 +79,11 @@ function HomeSlider() {
                 <div className="home-small-screen container">
                   <div className="reg">
                     <HashLink
-                      // to="/register/signup#register"
-                      to="/register/login"
+                      to="/register/signup#register"
+                      // to="/register/login"
                       className="home-button"
                     >
-                      {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                      REGISTER&nbsp;/&nbsp;LOGIN
                     </HashLink>
                   </div>
                   <div className="ca">
@@ -106,13 +106,13 @@ function HomeSlider() {
             >
               <div className="col-md-12 col-sm-12 col-12 ftco-animate text-center mt-5" style={{width:"78vw"}}>
                 <div id="row" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1" src="/images/logo/powered.svg" alt="Rankers" />
-                  </a>
+                  </a> */}
                   <img id="columnLogo" src="/images/logo/spardha-white-home.png" alt="spardha" />
-                  <a href="https://iitiantrader.in/">
+                  {/* <a href="https://iitiantrader.in/">
                     <img id="column2" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h1 className="mb-1 text-overflow-center spardha-21">
                   Spardha&nbsp;2023
@@ -121,18 +121,18 @@ function HomeSlider() {
                   IIT (BHU), Varanasi
                 </h2>
                 <div id="rowM" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1M" src="/images/logo/powered.svg" alt="Rankers" />
-                  </a>
-                  <a href="https://iitiantrader.in/">
+                  </a> */}
+                  {/* <a href="https://iitiantrader.in/">
                     <img id="column2M" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h2
                   className="text-overflow-center home-spardha-subheading"
                   style={{ color: '#fdcc07' }}
                 >
-                  Registrations are now closed
+                   13th - 15th october
                 </h2>
                 <div className="container mt-5 pt-3 home-large-screen">
                   <div className="row">
@@ -143,11 +143,11 @@ function HomeSlider() {
                     </div>
                     <div className="col-6 reg">
                       <HashLink
-                        // to="/register/signup#register"
-                        to="/register/login"
+                        to="/register/signup#register"
+                        // to="/register/login"
                         className="home-button"
                       >
-                        {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                        REGISTER&nbsp;/&nbsp;LOGIN
                       </HashLink>
                     </div>
                   </div>
@@ -161,7 +161,7 @@ function HomeSlider() {
                       to="/register/signup#register"
                       className="home-button"
                     >
-                      {/* REGISTER&nbsp;/&nbsp; */}LOGIN
+                      REGISTER&nbsp;/&nbsp;LOGIN
                     </HashLink>
                   </div>
                   <div className="ca">
@@ -184,13 +184,13 @@ function HomeSlider() {
             >
               <div className="col-md-12 col-sm-12 col-12 ftco-animate text-center mt-5" style={{width:"78vw"}}>
                 <div id="row" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1" src="/images/logo/powered.svg" alt="Rankers" />
-                  </a>
+                  </a> */}
                   <img id="columnLogo" src="/images/logo/spardha-white-home.png" alt="spardha" />
-                  <a href="https://iitiantrader.in/">
+                  {/* <a href="https://iitiantrader.in/">
                     <img id="column2" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h1 className="mb-1 text-overflow-center spardha-21">
                   Spardha&nbsp;2023
@@ -199,18 +199,18 @@ function HomeSlider() {
                   IIT (BHU), Varanasi
                 </h2>
                 <div id="rowM" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1M" src="/images/logo/powered.svg" alt="Rankers" />
                   </a>
                   <a href="https://iitiantrader.in/">
                     <img id="column2M" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h2
                   className="text-overflow-center home-spardha-subheading"
                   style={{ color: '#fdcc07' }}
                 >
-                  Registrations are now closed
+                   13th - 15th october
                 </h2>
                 <div className="container mt-5 pt-3 home-large-screen">
                   <div className="row">
@@ -221,11 +221,11 @@ function HomeSlider() {
                     </div>
                     <div className="col-6 reg">
                       <HashLink
-                        // to="/register/signup#register"
-                        to="/register/login"
+                        to="/register/signup#register"
+                        // to="/register/login"
                         className="home-button"
                       >
-                        {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                        REGISTER&nbsp;/&nbsp;LOGIN
                       </HashLink>
                     </div>
                   </div>
@@ -236,11 +236,11 @@ function HomeSlider() {
                 <div className="home-small-screen container">
                   <div className="reg">
                     <HashLink
-                      // to="/register/signup#register"
-                      to="/register/login"
+                      to="/register/signup#register"
+                      // to="/register/login"
                       className="home-button"
                     >
-                        {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                        REGISTER&nbsp;/&nbsp;LOGIN
                     </HashLink>
                   </div>
                   <div className="ca">
@@ -263,13 +263,13 @@ function HomeSlider() {
             >
               <div className="col-md-12 col-sm-12 col-12 ftco-animate text-center mt-5" style={{width:"78vw"}}>
                 <div id="row" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1" src="/images/logo/powered.svg" alt="Rankers" />
-                  </a>
+                  </a> */}
                   <img id="columnLogo" src="/images/logo/spardha-white-home.png" alt="spardha" />
-                  <a href="https://iitiantrader.in/">
+                  {/* <a href="https://iitiantrader.in/">
                     <img id="column2" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h1 className="mb-1 text-overflow-center spardha-21">
                   Spardha&nbsp;2023
@@ -278,18 +278,18 @@ function HomeSlider() {
                   IIT (BHU), Varanasi
                 </h2>
                 <div id="rowM" className="">
-                  <a href="https://myrankers.com">
+                  {/* <a href="https://myrankers.com">
                     <img id="column1M" src="/images/logo/powered.svg" alt="Rankers" />
                   </a>
                   <a href="https://iitiantrader.in/">
                     <img id="column2M" src="/images/logo/co-powered.svg" alt="Iitian Traders" />
-                  </a>
+                  </a> */}
                 </div>
                 <h2
                   className="text-overflow-center home-spardha-subheading"
                   style={{ color: '#fdcc07' }}
                 >
-                  Registrations are now closed
+                  13th - 15th october
                 </h2>
                 <div className="container mt-5 pt-3 home-large-screen">
                   <div className="row">
@@ -300,11 +300,11 @@ function HomeSlider() {
                     </div>
                     <div className="col-6 reg">
                       <HashLink
-                        // to="/register/signup#register"
-                        to="/register/login"
+                        to="/register/signup#register"
+                        // to="/register/login"
                         className="home-button"
                       >
-                        {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                        REGISTER&nbsp;/&nbsp;LOGIN
                       </HashLink>
                     </div>
                   </div>
@@ -315,11 +315,11 @@ function HomeSlider() {
                 <div className="home-small-screen container">
                   <div className="reg">
                     <HashLink
-                      // to="/register/signup#register"
-                      to="/register/login"
+                      to="/register/signup#register"
+                      // to="/register/login"
                       className="home-button"
                     >
-                        {/* REGISTER&nbsp;/&nbsp;LOGIN */}LOGIN
+                        REGISTER&nbsp;/&nbsp;LOGIN
                     </HashLink>
                   </div>
                   <div className="ca">

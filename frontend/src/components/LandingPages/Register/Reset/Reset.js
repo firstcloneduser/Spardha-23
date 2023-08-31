@@ -45,8 +45,9 @@ function Reset() {
     const token = searchParams.get('token');
     const uidb64 = searchParams.get('id');
 
+    const baseUrl = process.env.REACT_APP_BASE_URL;
     axios
-      .patch('https://api.spardha.co.in/auth/password_reset/update_password/', {
+      .patch(`${baseUrl}auth/password_reset/update_password/`, {
         password: password1.value,
         token,
         uidb64,

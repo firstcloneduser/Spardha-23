@@ -44,7 +44,7 @@ const ContingentEdit = () => {
   useEffect(() => {
     // console.log('input=', input);
     axios
-      .get(`${baseUrl}/teams/contingent/details/`, {
+      .get(`${baseUrl}teams/contingent/details/`, {
         headers: {
           Authorization: `Token ${token}`,
         },
@@ -121,7 +121,7 @@ const ContingentEdit = () => {
       });
     } else {
       axios
-        .delete(`${baseUrl}/teams/contingent/details/`, {
+        .delete(`${baseUrl}teams/contingent/details/`, {
           headers: {
             Authorization: `Token ${token}`,
           },
@@ -140,7 +140,7 @@ const ContingentEdit = () => {
           //console.log('passed', passed);
 
           axios
-            .post(`${baseUrl}/teams/contingent/details/`, passed, {
+            .post(`${baseUrl}teams/contingent/details/`, passed, {
               headers: {
                 Authorization: `Token ${token}`,
               },

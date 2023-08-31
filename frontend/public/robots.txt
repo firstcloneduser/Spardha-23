@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://spardha.co.in/sitemap.xml
+Sitemap: https://spardha.org.in/sitemap.xml

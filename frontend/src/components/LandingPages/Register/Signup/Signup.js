@@ -74,8 +74,9 @@ function Signup() {
       return;
     }
 
+    const baseUrl = process.env.REACT_APP_BASE_URL;
     axios
-      .post('https://api.spardha.co.in/auth/register/', {
+      .post(`${baseUrl}auth/register/`, {
         username: username.value,
         email: email.value,
         password: password1.value,
@@ -685,7 +686,7 @@ function Signup() {
                   target="_blank"
                   style={{ textDecoration: 'none' }}
                 >
-                  "Rules of Spardha 2022."{' '}
+                  "Rules of Spardha 2023."{' '}
                 </a>
               </Label>
             </FormGroup>

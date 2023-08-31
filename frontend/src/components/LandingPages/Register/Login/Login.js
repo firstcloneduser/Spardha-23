@@ -52,8 +52,9 @@ function Login() {
       return;
     }
 
+    const baseUrl = process.env.REACT_APP_BASE_URL;
     axios
-      .post('https://api.spardha.co.in/auth/login/', {
+      .post(`${baseUrl}auth/login/`, {
         username: username.value,
         password: password.value,
       })

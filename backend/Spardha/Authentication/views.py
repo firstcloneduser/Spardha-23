@@ -29,9 +29,16 @@ from drf_yasg import openapi
 # from scripts.user_registration import UsersSheet
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
+from Spardha.settings import CURRENT_URL_BACKEND, SENDGRID_VERIFY_ACCOUNT_TEMP_ID
+from Services import discord_logger
 
 token_param = openapi.Parameter('Authorization', openapi.IN_QUERY,
                                 description="Provide auth token", type=openapi.TYPE_STRING)
+
+def get_current_site(*args, **kwargs):
+    class Site:
+        domain = CURRENT_URL_BACKEND
+    return Site
 
 
 class LoginView(generics.GenericAPIView):
@@ -143,7 +150,7 @@ class RequestPasswordResetEmail(generics.GenericAPIView):
                  <br> We have received a request to reset the password of your Spardha account. <br>
                  Click the link below to proceed further: <br> <a href='{absurl}'>Reset</a> <br>
                  If you have any questions, please contact us at 
-                 <a href='mailto:info@spardha.co.in'>info@spardha.co.in</a>"""
+                 <a href='mailto:info@spardha.org.in'>info@spardha.org.in</a>"""
             data = {
                 # "email_body": email_body,
                 "to_mail": [user.email],
@@ -221,6 +228,7 @@ class UserUpdateView(generics.GenericAPIView):
             }
             return Response(content, status=status.HTTP_200_OK)
         except serializers.get_error_detail:
+            discord_logger.send_message(str(serializers.get_error_detail))
             return Response(
                 {"error": "An error occurred!"}, status=status.HTTP_403_FORBIDDEN
             )
@@ -268,7 +276,7 @@ def send_verification_mail(user, request):
     }
     data = {
         "to_mail": [user.email],
-        "template_id":"d-ba7d6cca06e0434abd4da324ee33633d",
+        "template_id": SENDGRID_VERIFY_ACCOUNT_TEMP_ID,
         "dynamic_template_data": Temp_Data
     }
 
@@ -397,3 +405,9 @@ class DeleteAccountView(generics.GenericAPIView):
                 {"error": "Account with this mail is not registered!"},
                 status=status.HTTP_403_FORBIDDEN,
             )
+
+class StatusCheck(generics.GenericAPIView):
+    def get(request, user):
+        return Response(
+                    status = status.HTTP_200_OK,
+                )

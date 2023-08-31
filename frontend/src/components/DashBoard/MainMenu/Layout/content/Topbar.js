@@ -18,14 +18,14 @@ const Topbar = ({ toggleSidebar }) => {
 
   const token = localStorage.getItem('token');
   // console.log('token', token);
-  const baseUrl = 'https://api.spardha.co.in';
+  const baseUrl = process.env.REACT_APP_BASE_URL;
 
   const [user, setUser] = useState('');
   const [numevents, setNumEvents] = useState('10');
 
   useEffect(() => {
     axios
-      .get(`${baseUrl}/auth/update/`, {
+      .get(`${baseUrl}auth/update/`, {
         headers: {
           Authorization: `Token ${token}`,
         },
@@ -40,7 +40,7 @@ const Topbar = ({ toggleSidebar }) => {
       });
 
     axios
-      .get(`${baseUrl}/teams/`, {
+      .get(`${baseUrl}teams/`, {
         headers: {
           Authorization: `Token ${token}`,
         },

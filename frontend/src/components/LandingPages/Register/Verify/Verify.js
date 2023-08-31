@@ -40,8 +40,9 @@ function Verify() {
       return;
     }
 
+    const baseUrl = process.env.REACT_APP_BASE_URL;
     axios
-      .post('https://api.spardha.co.in/auth/verify/', {
+      .post(`${baseUrl}auth/verify/`, {
         email: email.value,
       })
       .then((res) => {

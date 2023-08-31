@@ -4,6 +4,7 @@ from sendgrid.helpers.mail import (Mail,From)
 from sendgrid import SendGridAPIClient
 from django.conf import settings
 from Spardha.settings import DEFAULT_FROM_EMAIL
+from Services import discord_logger
 
 class Util:
     @staticmethod
@@ -30,8 +31,9 @@ class Util:
             code, headers = response.status_code, response.headers
             if code != 202:
                 print(f"Response code: {code}")
-            # print(f"Response headers: {headers}")
+                discord_logger.send_message(f"Sendgrid email response code: {code}. Email: '''{email}'''")
         except Exception as e:
                 print("Error: {0}".format(e))
+                discord_logger.send_message(f"Sendgrid email exception: {e}. Email: '''{email}'''")
         return 1
 

@@ -21,7 +21,7 @@ const Registration = () => {
 
   useEffect(() => {
     axios
-      .get(`${baseUrl}/teams/contingent/details/`, {
+      .get(`${baseUrl}teams/contingent/details/`, {
         headers: {
           Authorization: `Token ${token}`,
         },
