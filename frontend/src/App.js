@@ -35,7 +35,7 @@ const Register = React.lazy(() =>
   import('./components/LandingPages/Register/Register')
 );
 const Signup = React.lazy(() =>
-  import('./components/LandingPages/Register/Signup/Signup')
+  import('./components/LandingPages/Register/Signup/newSignup')
 );
 const Login = React.lazy(() =>
   import('./components/LandingPages/Register/Login/Login')

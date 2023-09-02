@@ -19,6 +19,7 @@
   margin-bottom: 15px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
+  background-color: #FFFFFF;
   line-height: 1.42857143;
   color: #333;
 }
@@ -45,7 +46,7 @@
   background-color: #f9f9f9;
   margin-bottom: 20px;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 30px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
@@ -59,12 +60,28 @@
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   color: #333;
-  background-color: #f2f2f2 !important;
+  background-color: #D9D9D9 !important;
 }
 
-.panel-title {
+.panel-title-1 {
   font-size: 16px;
+  width:40%;
   margin-bottom: 0 !important;
+  color:#000000;
+}
+
+.panel-title-2 {
+  font-size: 16px;
+  width:40%;
+  margin-bottom: 0 !important;
+  color:#000000;
+}
+
+.panel-title-3 {
+  font-size: 16px;
+  width:15%;
+  margin-bottom: 0 !important;
+  color:#000000;
 }
 
 .panel-title:hover {
@@ -115,4 +132,9 @@
   box-shadow: 1px 1px 8px rgba(102, 175, 233, 0.6);
   background-color: white;
   transition: none !important;
+}
+
+.register-page-form-header{
+  display:flex;
+
 }
