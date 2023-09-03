@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import Carousel from '../../Home/Carousel/Carouselhp';
 import {
   Alert,
   Button,
@@ -31,12 +34,14 @@ import isAlphanumeric from 'validator/lib/isAlphanumeric';
 import isInt from 'validator/lib/isInt';
 import isPhone from 'validator/lib/isMobilePhone';
 import isAlpha from 'validator/lib/isAlpha';
+import { AnimatePresence, motion } from "framer-motion";
 
 function Signup() {
+  const location = useLocation();
   const ref_container = useRef();
   useEffect(() => {
     const scrollDiv = document.getElementById('signUpDiv').offsetTop;
-    window.scrollTo({ top: scrollDiv + 600, behavior: 'smooth' });
+    window.scrollTo({top: scrollDiv -80, behavior: 'smooth'});
   }, []);
   const submitHandler = (e) => {
     e.preventDefault();
@@ -218,9 +223,12 @@ function Signup() {
     color: 'primary',
     message: '',
   });
-
   return (
-    <div id="signUpDiv" ref={ref_container}>
+    <motion.div 
+      id="signUpDiv" ref={ref_container}
+      transition={{delay:0.1}}
+
+    >
       <div className="col-sm-12">
         {/* <Alert
           color="success"
@@ -244,20 +252,32 @@ function Signup() {
         </Alert> */}
         <Alert
           color="primary"
-          className="py-2"
+          className={`${styles['signup_note']} py-2`}
+
           style={{
             fontSize: '14px',
-            fontFamily: 'Helvetica Neue,Helvetica,Arial,sans-serif',
+            heigth:'80px',
+            fontFamily: 'Poppins, sans-serif',
             background: "#760E53",
             color:'#FFFFFF ',
             fontWeight:'400',
+            paddingTop:'0.5rem',
+            borderRadius:'15px',
+            opacity: "1",
+            transition: "all .2s",
+            visibility:  "visible",
           }}
+        ><motion.div
+        initial={{opacity:0}}
+        animate={{y:0,opacity:1}}
+        exit={{y:100,opacity:0}}
+        transition={{ duration: 0.5 }}
         >
           <strong>NOTE:</strong><br />
-          1.Individual registrations are not entertained.
+          1. Individual registrations are not entertained.
           Only one registration is allowed per college.<br />
           2. If you cannot find your Institute name, then
-          type it manually.
+          type it manually.</motion.div>
         </Alert>
         {/* <Alert
           color="warning"
@@ -281,7 +301,7 @@ function Signup() {
           *&nbsp;Mandatory
         </span>
       </div> */}
-
+      
       <Form className={`${styles['form-horizontal']}`}>
         <div
           className="col-sm-12 justify-content-center fw-bold d-flex flex-column"
@@ -289,32 +309,46 @@ function Signup() {
         >
           <div className={`${styles.panel}`}>
             <div className={`${styles['panel-heading']}`}>
-              <div className={`${styles['register-page-form-header']}`}>
+              <div className={`${styles['register-page-form-header']}`} >
                 <h4
                   className={`${styles['panel-title-1']} text-center`}
-                  style={{ color: '#000000' }}
+                  style={{ color: '#760E53'}}
                 >
-                  Signup
+                  Sign up
+                  <motion.div className={`${styles['underline']}`} layoutId="underline" transition={{ duration: 0.5 }}/>
                 </h4>
                 <h4
                   className={`${styles['panel-title-2']} text-center`}
                   style={{ color: '#000000' }}
                 >
-                  Login
+                <Link to="/register/login" style={{ textDecoration: 'none',color: '#000000'}}>Login</Link>
                 </h4>
                 <h4
-                  className={`${styles['panel-title-2']} text-center`}
+                  className={`${styles['panel-title-3']} text-center`}
                   style={{ color: '#000000' }}
                 >
-                  *Mandatory
+                  <span style={{ color: 'red' }}>*</span>Mandatory
                 </h4>
               </div>
             </div>
-
-            <FormGroup className={`${styles['form-group']}`}>
+            <AnimatePresence>
+              <motion.div 
+            initial={{ y: 0.001, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -0.001, opacity: 0 }}
+            transition={{ duration: 0.5 }}>
+            <FormGroup className={`${styles['form-group']}`} style={{
+            opacity: "1",
+            transition: "all .2s",
+            visibility:  "visible",
+            transitionDelay: "all 10s"}}>
               <Row xs={1} md={1} xl={2}>
                 <div className="col-sm-6">
-                  <FormGroup className={`${styles['form-group']}`}>
+                  <FormGroup className={`${styles['form-group']}`} style={{
+            opacity: "1",
+            transition: "all .2s",
+            visibility:  "visible",
+            transitionDelay: "all 10s"}}>
                     <Label for="email" className={`${styles.label}`}>
                       Email Address:&nbsp;
                       <span style={{ color: 'red' }}>*</span>
@@ -685,18 +719,19 @@ function Signup() {
                   </FormGroup>
                 </div>
               </Row>
-            </FormGroup>
+            </FormGroup></motion.div></AnimatePresence>
           </div>
 
-          <div className="col-sm-12">
-            <FormGroup check className={`${styles['form-group']} ps-3`}>
-              <Input type="checkbox" name="terms" id="terms" required></Input>
+          <div className="col-sm-12 ">
+            <FormGroup check className={`${styles['form-group']} ps-3`} style={{backgroundColor:"transparent"}} >
+              <div className={`${styles['form-footer']}`} style={{textAlign:"center", alignItems:"center",backgroundColor:"none"}}> 
+              <Input className={`${styles['form-footer-input']}`} type="checkbox" name="terms" id="terms" required style={{float:"none"}}></Input>
               <Label
                 for="terms"
-                className={`${styles.label}`}
-                style={{ paddingTop: '2px', textAlign: 'justify' }}
+                className={`${styles['label']}`}
+                style={{ paddingTop: '2px', textAlign: 'justify',fontSize:"14px" }}
               >
-                <span style={{ color: 'red' }}>*</span>By submitting this form,
+                By submitting this form,
                 you agree to abide by the{' '}
                 <a
                   href="/pdf/RuleBook.pdf"
@@ -705,7 +740,9 @@ function Signup() {
                 >
                   "Rules of Spardha 2023."{' '}
                 </a>
+                
               </Label>
+              </div>
             </FormGroup>
           </div>
 
@@ -727,10 +764,9 @@ function Signup() {
             className={`${styles['btn-block']}`}
             onClick={submitHandler}
           >
-            <FaPaperPlane color="white" className="me-1"></FaPaperPlane>
             Sign up
           </Button>
-          <b
+          {/* <b
             style={{
               fontSize: '10px',
               textAlign: 'center',
@@ -741,10 +777,10 @@ function Signup() {
             <Link to="/register/login" style={{ textDecoration: 'none' }}>
               {`Log in `}
             </Link>
-          </b>
+          </b> */}
         </div>
       </Form>
-    </div>
+    </motion.div>
   );
 }
 
