@@ -15,9 +15,9 @@ const DashBoard = React.lazy(() =>
   import('./components/DashBoard/MainMenu/DashBoard')
 );
 const About = React.lazy(() => import('./components/LandingPages/About/About'));
-const CamAmb = React.lazy(() =>
-  import('./components/LandingPages/Camp_Amb/CamAmb')
-);
+// const CamAmb = React.lazy(() =>
+//   import('./components/LandingPages/Camp_Amb/CamAmb')
+// );
 const Events = React.lazy(() =>
   import('./components/LandingPages/Events/Events')
 );
@@ -213,14 +213,14 @@ function App() {
               </Suspense>
             }
           />
-          <Route
+          {/* <Route
             path="ca"
             element={
               <Suspense fallback={<Preloader />}>
                 <CamAmb />
               </Suspense>
             }
-          />
+          /> */}
           <Route
             path="gallery"
             element={
