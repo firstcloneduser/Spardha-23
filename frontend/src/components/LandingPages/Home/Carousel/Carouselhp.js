@@ -38,7 +38,7 @@ function Carousel() {
       />
       <button id='next' className=" carousel-control-next" onClick={nextSlide}>
       <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
+            {/* <span className="visually-hidden">Next</span> */}
       </button>
     </div>
   );
