@@ -1,0 +1,77 @@
+.footbox {
+	display: flex;
+	color: white;
+	justify-content: center;
+	align-items: center;
+}
+.footer {
+	margin-top: 5vh;
+	display: flex;
+	gap: 4vw;
+	justify-content: center;
+	background-image: linear-gradient(
+		to right,
+		white,
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0),
+		white
+	);
+}
+.info {
+	text-align: center;
+
+}
+.info1 {
+	font-weight: 600;
+	font-size: 2vw;
+}
+.info2 {
+	font-weight: 700;
+	font-size: 5vh;
+	display: flex;
+	gap: 3vw;
+	font-family: Helvetica Compressed;
+}
+.info3 {
+	font-weight: 600;
+	font-size: 1vw;
+}
+.logo1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 5vw;
+	color: red;
+	font-weight: 700;
+	font-size: 2vh;
+}
+@media(max-width:800px){
+	.footbox {
+		width: 100vw;
+		display: flex;
+		color: white;
+		justify-content: center;
+		align-items: center;
+	}
+	.info1{
+		font-size: 2vh;
+	}
+	.info2{	font-size: 2.5vh;}
+	.footer{
+		margin-top: 5vh;
+		width: 95vw;
+		max-width: 600px;
+	}
+	.info3{
+		margin: 0.5vh;
+		font-size: 1.2vh;
+	}
+}
+
+span{
+    text-shadow:0 0 5px #FF6347, 0 0 10px #FF6347, 0 0 20px #FF6347 inset, 0 0 30px #FF6347, 0 0 40px #FF6347 inset, 0 0 50px #FF6347 inset, 0 0 60px #FF6347;
+}
+
+
+  

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header/Header';
-import HomeSlider from './HomeSlider/HomeSlider';
+import HomePage from './Home/HomePage/Home';
 import Footer from './Footer/Footer';
 import { Outlet } from 'react-router';
 
@@ -8,7 +8,7 @@ function LandingPages() {
   return (
     <>
       <Header />
-      <HomeSlider />
+      <HomePage />
       <Outlet />
       <Footer />
     </>

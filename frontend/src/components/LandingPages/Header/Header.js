@@ -46,7 +46,7 @@ function Header() {
         }}
       >
         <NavbarBrand>
-          <NavHashLink exact="true" to="/#home-slider" smooth>
+          <NavHashLink exact="true" to="/" smooth>
             <img
               src={`/images/logo/spardha-logo-${
                 navbar ? 'black' : 'white'
@@ -68,7 +68,7 @@ function Header() {
             <NavItem className={styles['nav-items']}>
               <NavHashLink
                 exact="true"
-                to="/#home-slider"
+                to="/"
                 className={styles['nav-links']}
                 onClick={() => {
                   setOpen(false);

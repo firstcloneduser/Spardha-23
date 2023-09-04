@@ -65,6 +65,10 @@ const ContingentEdit = React.lazy(() =>
 const EventsEdit = React.lazy(() =>
   import('./components/DashBoard/Registration/Events/EventsEdit/EventsEdit')
 );
+const HomePage = React.lazy(() =>
+  import('./components/LandingPages/Home/HomePage/Home')
+);
+
 
 function usePageViews() {
   let location = useLocation();
@@ -90,6 +94,14 @@ function App() {
             </Suspense>
           }
         >
+           <Route
+            path="/HomePage"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <HomePage />
+              </Suspense>
+            }
+          />
           <Route
             path=""
             element={
@@ -142,6 +154,7 @@ function App() {
                 </Suspense>
               }
             />
+            
             <Route
               exact
               path="verify"
@@ -266,6 +279,7 @@ function App() {
               </Suspense>
             }
           />
+         
         </Route>
       </Routes>
       {/* </Router> */}
