@@ -8,9 +8,9 @@ function LandingPages() {
   return (
     <>
       <Header />
-      <HomePage />
+      {/* <HomePage /> */}
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
