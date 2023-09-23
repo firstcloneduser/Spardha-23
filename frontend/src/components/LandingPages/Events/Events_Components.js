@@ -1,49 +1,49 @@
 import React from 'react';
 import styles from './Events.module.css';
-import rules from './rules.jpg';
+// import rules from './rules.jpg';
 // import trophy from './trophy.jpg';
-import contacts from './contacts.jpg';
+// import contacts from './contacts.jpg';
 import { FaTimes } from 'react-icons/fa';
 import athletics from './image/athletics.png';
-import athleticshover from './image/athleticshover.png';
+// import athleticshover from './image/athleticshover.png';
 import basketball from './image/basketball.png';
-import basketballhover from './image/basketballhover.png';
+// import basketballhover from './image/basketballhover.png';
 import badminton from './image/badminton.png';
-import badmintonhover from './image/badmintonhover.png';
+// import badmintonhover from './image/badmintonhover.png';
 import boxing from './image/boxing.png';
-import boxinghover from './image/boxinghover.png';
+// import boxinghover from './image/boxinghover.png';
 // import carrom from './carrom.png'
 import chess from './image/chess.png';
-import chesshover from './image/chesshover.png';
+// import chesshover from './image/chesshover.png';
 import cricket from './image/cricket.png';
-import crickethover from './image/crickethover.png';
+// import crickethover from './image/crickethover.png';
 import football from './image/football.png';
-import footballhover from './image/footballhover.png';
+// import footballhover from './image/footballhover.png';
 import handball from './image/handball.png';
-import handballhover from './image/handballhover.png';
-import question from './question.png';
+// import handballhover from './image/handballhover.png';
+// import question from './question.png';
 import hockey from './image/hockey.png';
-import hockeyhover from './image/hockeyhover.png';
+// import hockeyhover from './image/hockeyhover.png';
 import kabaddi from './image/kabaddi.png';
-import kabaddihover from './image/kabaddihover.png';
+// import kabaddihover from './image/kabaddihover.png';
 import khokho from './image/kho-kho.png';
-import khokhohover from './image/kho-khohover.png';
+// import khokhohover from './image/kho-khohover.png';
 import cycling from './image/cycling.png';
-import cyclinghover from './image/cyclinghover.png';
+// import cyclinghover from './image/cyclinghover.png';
 import squash from './image/squash.png';
-import squashhover from './image/squashhover.png';
+// import squashhover from './image/squashhover.png';
 import powerlifting from './image/powerlifting.png';
-import powerliftinghover from './image/powerliftinghover.png';
+// import powerliftinghover from './image/powerliftinghover.png';
 import tabletennis from './image/table-tennis.png';
-import tabletennishover from './image/tabletennishover.png';
+// import tabletennishover from './image/tabletennishover.png';
 import taekwondo from './image/taekwondo.png';
-import taekwondohover from './image/taekwondohover.png';
+// import taekwondohover from './image/taekwondohover.png';
 import tennis from './image/tennis.png';
-import tennishover from './image/tennishover.png';
+// import tennishover from './image/tennishover.png';
 import volleyball from './image/volleyball.png';
-import volleyballhover from './image/volleyballhover.png';
+// import volleyballhover from './image/volleyballhover.png';
 import weightlifting from './image/weightlifting.png';
-import weightliftinghover from './image/weightliftinghover.png';
+// import weightliftinghover from './image/weightliftinghover.png';
 import AthleticsPDF from './athletics.pdf';
 import BadmintonPDF from './badminton.pdf';
 import BasketballPDF from './basketball.pdf';
@@ -63,7 +63,7 @@ import TennisPDF from './tennis.pdf';
 import VolleyballPDF from './volleyball.pdf';
 import WeightliftingPDF from './weightlifting.pdf';
 import TaekwondoPDF from './taekwondo.pdf';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 // const Aqautics = (props) => {
 //   return (
@@ -259,25 +259,25 @@ const Athletics = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-          Rohit Diwakar
+          Tagaram Kiran Kumar
           <br />
         </span>
         <span className={`${styles.content}`}>
-          8827687934
+          7396797341
           <br />
-          rohit.diwakar.ece19@itbhu.ac.in
+          tagaram.kirankumar.cer20@itbhu.ac.in
           <br />
           <br />
         </span>
         <span className={`${styles.content_header}`}
         >
-          Anshika Singh(W)
+          Anchal Dhar (W)
           <br />
         </span>
         <span className={`${styles.content}`}>
-          7985967630
+          8955357448
           <br />
-          anshika.singh.phy19@itbhu.ac.in
+          anchal.dhar.mec21@itbhu.ac.in
         </span>
       </div>
       
@@ -354,7 +354,7 @@ const Athletics = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={athletics}
     />
@@ -626,25 +626,26 @@ const Badminton = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Sayan Ghosh <br />
+        Rishi Kaushik <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        7602961003
+        8005983306
           <br />
-          sayan.ghosh.cd.mat19@itbhu.ac.in
+          rishi.kaushik.eee21@itbhu.ac.in
           <br />
           <br />
         </span>
         <span className={`${styles.content_header}`}
         >
-          Anshul Sahai(W)
+          Manisha Bishnoi (W)
           <br />
         </span>
         <span className={`${styles.content}`}>
-        91668498500
+        8290451829
           <br />
-          anshul.sahai.che19@itbhu.ac.in
+          manisha.bishnoi.mec21@itbhu.ac.in
+
         </span>
       </div>
       
@@ -712,7 +713,7 @@ const Badminton = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={badminton}
     />
@@ -922,25 +923,25 @@ const Basketball = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Aryan Shukla <br />
+        Pratyaksh Sharma <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        8171354203
+        7725911213
           <br />
-          aryanshukla.mat18@itbhu.ac.in
+          pratyaksh.sharma.civ21@itbhu.ac.in
           <br />
           <br />
         </span>
         <span className={`${styles.content_header}`}
         >
-          Arya Kumari(W)
+         Chhaya umbarkar (W)
           <br />
         </span>
         <span className={`${styles.content}`}>
-        8409372829
+        7249784702
           <br />
-          aryakumari.mst18@itbhu.ac.in
+          chhaya.umbarkar.mst20@itbhu.ac.in
         </span>
       </div>
       
@@ -1008,7 +1009,7 @@ const Basketball = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={basketball}
     />
@@ -1218,25 +1219,28 @@ const Boxing = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Ankur Minj <br />
+        Suyash Baloni <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        9171946273
+        N/A
           <br />
-          ankur.minj.min19@itbhu.ac.in
+          suyash.baloni.bme20@itbhu.ac.in
+
           <br />
           <br />
         </span>
         <span className={`${styles.content_header}`}
         >
-          Smriti Sharma(W)
+          Saloni Agrawal (W)
           <br />
         </span>
         <span className={`${styles.content}`}>
-        8303077445
+       9928107374
           <br />
-          smriti.sharma.ece19@itbhu.ac.in
+          saloni.agrawal.mat20@itbhu.ac.in
+
+
         </span>
       </div>
       
@@ -1277,7 +1281,7 @@ const Boxing = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={boxing}
     />
@@ -1473,13 +1477,13 @@ const Chess = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Mack Mohan Verma <br />
+        Harshraj Joshi <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        9548338599
+        N/A
           <br />
-          mack.mohanverma.mec19@itbhu.ac.in
+          harshraj.joshi.che21@itbhu.ac.in
           <br />
           <br />
         </span>
@@ -1550,7 +1554,7 @@ const Chess = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={chess}
     />
@@ -1750,11 +1754,11 @@ const Cricket = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Shashank S Prakash <br />
+       Jai Patel <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        8368920987
+       7023064941
           <br />
           shashanksp.met18@iitbhu.ac.in
           <br />
@@ -1827,7 +1831,7 @@ const Cricket = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={cricket}
     />
@@ -2103,7 +2107,7 @@ const Cycling = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={cycling}
     />
@@ -2299,13 +2303,13 @@ const Football = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Ritwik Singh <br />
+        Soham Nandy <br />
                     
         </span>
         <span className={`${styles.content}`}>
         9549847995
           <br />
-          ritviksingh.phy18@itbhu.ac.in
+          soham.nandy.cd.mst21@itbhu.ac.in
           <br />
           <br />
         </span>
@@ -2376,7 +2380,7 @@ const Football = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={football}
     />
@@ -2575,13 +2579,14 @@ const Handball = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Sharath Ram <br />
+        Patel Avi <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        8072714518
+        6352926616
           <br />
-          sharath.ramsb.mst19@itbhu.ac.in
+          patelavi.nihilkumar.mec21@itbhu.ac.in
+
           <br />
           <br />
         </span>
@@ -2652,7 +2657,7 @@ const Handball = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={handball}
     />
@@ -2852,13 +2857,13 @@ const Hockey = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Raghubir <br />
+        Abhishek Meena <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        6265573271
+        8840041931
           <br />
-          raghubir.student.phe19@itbhu.ac.in
+abhishek.meena.mec19@itbhu.ac.in
           <br />
           <br />
         </span>
@@ -2929,7 +2934,7 @@ const Hockey = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={hockey}
     />
@@ -3131,25 +3136,25 @@ const Kabbadi = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Sateesh Kumar <br />
+        Peddinti Sai siva kumar<br />
                     
         </span>
         <span className={`${styles.content}`}>
-        7354388062
+        7569965571
           <br />
-          sateesh.kumar.bme19@itbhu.ac.in
+peddinti.saiskumar.cer19@itbhu.ac.in
           <br />
           <br />
         </span>
         <span className={`${styles.content_header}`}
         >
-          Keloth Tejaswini(W)
+Kodurupaka Mallika (W)
           <br />
         </span>
         <span className={`${styles.content}`}>
-        9177574613
+        6302471817
           <br />
-          keloth.tejaswini.min20@itbhu.ac.in
+kodurupaka.mallika.mec21@itbhu.ac.in
         </span>
       </div>
       
@@ -3182,7 +3187,7 @@ const Kabbadi = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={kabaddi}
     />
@@ -3379,25 +3384,26 @@ const Khokho = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Rahul Lakra <br />
+        yandapalli gireesh reddy
+ <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        8877441658
+        6303606994
           <br />
-          rahul.lakra.min19@itbhu.ac.in
+          ygireesh.reddy.eee21@itbhu.ac.in
           <br />
           <br />
         </span>
         <span className={`${styles.content_header}`}
         >
-          Tejswinee Karwar (W)
+Saloni Sharma (W)
           <br />
         </span>
         <span className={`${styles.content}`}>
-        7770880674
+        8392940227
           <br />
-          tejswinee.karwar.met19@itbhu.ac.in
+saloni.sharma.civ22@itbhu.ac.in
         </span>
       </div>
       
@@ -3476,7 +3482,7 @@ const Khokho = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={khokho}
     />
@@ -3776,7 +3782,7 @@ const Powerlifting = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={powerlifting}
     />
@@ -3977,13 +3983,25 @@ const Squash = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        B Rohith Netha <br />
+        Hemank Vats <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        8331891203
+        N/A
           <br />
-          brohith.netha.mec19@itbhu.ac.in
+         hemank.vats.apd20@itbhu.ac.in
+          <br />
+          <br />
+        </span>
+          <span className={`${styles.content_header}`}>
+        Toko yanu (W) <br />
+                    
+        </span>
+        <span className={`${styles.content}`}>
+        8258872098
+          <br />
+         saloni.sharma.civ22@itbhu.ac.in
+
           <br />
           <br />
         </span>
@@ -4019,7 +4037,7 @@ const Squash = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={squash}
     />
@@ -4217,25 +4235,26 @@ const TableTennis = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Sachin Arya <br />
+        Yashwardhan Sable <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        7073524926
+        8839679648
           <br />
-          sachinarya.mec18@iitbhu.ac.in
+          yashwardhan.sable.phy20@itbhu.ac.in
+
           <br />
           <br />
         </span>
         <span className={`${styles.content_header}`}
         >
-          Kajal Pathriyal(W)
+          Guddaji Sri Prada (W)
           <br />
         </span>
         <span className={`${styles.content}`}>
-        8127141299
+       N/A
           <br />
-          kajal.pathriyal.eee19@itbhu.ac.in
+         guddaji.sriprada.cse20@itbhu.ac.in
         </span>
       </div>
       
@@ -4256,7 +4275,7 @@ const TableTennis = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={tabletennis}
     />
@@ -4454,25 +4473,25 @@ const Taekwondo = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Suraj Gupta <br />
+        Divyanshu Bharti <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        7737877228
+        N/A
           <br />
-          suraj.gupta.che19@itbhu.ac.in
+          divyanshu.bharti.chy21@itbhu.ac.in
           <br />
           <br />
         </span>
         <span className={`${styles.content_header}`}
         >
-         Anjali. C(W)
+         Sameeksha Murdia (W)
           <br />
         </span>
         <span className={`${styles.content}`}>
-        9207970160
+        9660339180
           <br />
-          anjalic.civ18@itbhu.ac.in
+          sameeksha.murdia.phy20@itbhu.ac.in
         </span>
       </div>
       
@@ -4493,7 +4512,7 @@ const Taekwondo = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={taekwondo}
     />
@@ -4691,25 +4710,26 @@ const Tennis = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Baidhar Soren <br />
+        Trinabh Vashistha <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        6372843510
+        8502959213
           <br />
-          baidhar.srn@gmail.com
+          trinabh.vashistha.min21@itbhu.ac.in
           <br />
           <br />
         </span>
         <span className={`${styles.content_header}`}
         >
-          Charmitha(W)
+          Pranjali Gupta (W)
           <br />
         </span>
         <span className={`${styles.content}`}>
-        9666165321
+        N/A
           <br />
-          charmithakrishna2002@gmail.com
+          pranjali.gupta.mst19@itbhu.ac.in
+
         </span>
       </div>
       
@@ -4730,7 +4750,7 @@ const Tennis = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={tennis}
     />
@@ -4927,25 +4947,25 @@ const Volleyball = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Shivkaran Singh Ranawat<br />
+        Pawan Kumar<br />
                     
         </span>
         <span className={`${styles.content}`}>
-        8824018065
+        9110142092
           <br />
-          shivkarans.ranawat.phe19@itbhu.ac.in
+          pawan.kumar.ece20@itbhu.ac.in
           <br />
           <br />
         </span>
         <span className={`${styles.content_header}`}
         >
-          Yashika lamba(W)
+          Boddu Bhavana (W)
           <br />
         </span>
         <span className={`${styles.content}`}>
-        8076365550
+        9390085089
           <br />
-          yashika.lamba.phe19@itbhu.ac.in
+         boddu.bhavana.mec20@itbhu.ac.in
         </span>
       </div>
       
@@ -5023,7 +5043,7 @@ const Volleyball = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={volleyball}
     />
@@ -5243,13 +5263,13 @@ const WeightLifting = (props) => {
           }}
         >
         <span className={`${styles.content_header}`}>
-        Pulkit Khandelwal <br />
+       Harsh Agrawal <br />
                     
         </span>
         <span className={`${styles.content}`}>
-        6350078788
+        9759877847
           <br />
-          pkhandelwal.civ18@itbhu.ac.in
+          harshagrawal789789@gmail.com
           <br />
           <br />
         </span>
@@ -5320,7 +5340,7 @@ const WeightLifting = (props) => {
     >
       Contacts:
     </div>
-    <img className={`${styles.event_image}`}
+    <img className={`${styles.event_image}`} alt=" "
       // style={{ width: 90, height: 90, left: 48, top: 28, position: "absolute" }}
       src={weightlifting}
     />
