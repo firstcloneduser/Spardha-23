@@ -22,35 +22,6 @@
   border-radius: 20px;
 
 }
-.title{
-  display: flex;
-  justify-content: space-between;
-}
-
-.registerbtn{
-  background-color: transparent;
-  text-decoration: none;
-  height: 5vh;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0.25rem !important;
-  padding: 20px 33px 20px 33px;
-  border-radius: 35px;
-  border: 1px;
-  gap: 10px;
-  border: 1px solid rgba(118, 14, 83, 1);
-  display: flex;
-  margin:2.5rem;
-  font-weight: 700;
-  color: #760E53;
-}
-
-.registerbtn:hover{
-  background-color: #760E53;
-  color: white;
-  transition: ease-out;
-  transition-duration: 200ms;
-}
 /* Customize scrollbar appearance (optional) */
 .scrollablediv::-webkit-scrollbar {
   width: 10px;
@@ -699,12 +670,12 @@ padding: 0px 2vw;
   position: absolute;
 }
 .event_box_header{
-  left: 32%;
+  left:35%;
   top: 24%;
   position: absolute;
   text-align: center;
   color: #760E53;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Poppins";
   font-weight: 600;
   text-decoration: underline;
@@ -717,23 +688,27 @@ padding: 0px 2vw;
   top: 6%; 
   position: absolute
 }
+.rule_book_box:hover{
+  background-color: #760E53;
+  color: #ffdcdc;
+}
 .event_box_name{
   left:17%;
   top: 10%;
   position: absolute;
   text-align: center;
   color: black;
-  font-size: 1.7em;
+  font-size: 1.3em;
   font-family: "Poppins";
   font-weight: 600;
   text-transform: capitalize;
   word-wrap: break-word
 }
 .rule_book_box{
-  width:40%;
-  height: 10%;
-  padding-left: 33px;
-  padding-right: 33px;
+  width:30%;
+  height: 8%;
+  padding-left: 25px;
+  padding-right: 25px;
   padding-top: 9px;
   padding-bottom: 9px;
   right: 9%;
@@ -788,12 +763,12 @@ padding: 0px 2vw;
     position: absolute;
   }
   .event_box_header{
-    left: 35%;
+    left: 34%;
     top: 27%;
     position: absolute;
     text-align: center;
     color: #760E53;
-    font-size: 2.2em;
+    font-size: 2em;
     font-family: "Poppins";
     font-weight: 600;
     text-decoration: underline;
@@ -810,12 +785,12 @@ padding: 0px 2vw;
     position: absolute
   }
   .event_box_name{
-    left: 17%;
+    left: 15%;
     top: 10%;
     position: absolute;
     text-align: center;
     color: black;
-    font-size: 2em;
+    font-size: 1.6em;
     font-family: "Poppins";
     font-weight: 600;
     text-transform: capitalize;
@@ -879,7 +854,7 @@ padding: 0px 2vw;
     height:20%;
   }
   .event_box_name{
-    font-size: 2.5em;
+    font-size: 2em;
   }
   .event_show_block1{
     width: 50%;
@@ -889,11 +864,15 @@ padding: 0px 2vw;
   position:absolute;
   }
   .event_show_block2{
+    left:5%;
+    width:50%
+  }
+  .event_show_block2{
     width: 50%;
     position:absolute;
     left:50%;
   height: 40%;
-    right: 8%;
+    right: 5%;
   top: 45%;
   }
   .event_box_header{
@@ -937,7 +916,7 @@ padding: 0px 2vw;
     max-width: 960px;
   }
   .event_box_header{left:42%}
-  .event_line_left{width:35%}
+  .event_line_left{width:33%}
   .event_line_right{width:35%}
   .rule_book_box{width:30%}
 }
@@ -1055,7 +1034,10 @@ padding: 0px 2vw;
 .rulebook {
   text-decoration: none;
   cursor: pointer;
-  color: black;
+  color:#760E53
+}
+.rulebook:hover{
+  color:#ffdcdc
 }
 .emptyblock{
   background-color: transparent;
